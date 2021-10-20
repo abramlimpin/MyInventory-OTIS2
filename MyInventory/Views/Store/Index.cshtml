@@ -1,0 +1,42 @@
+﻿@model MyInventory.Models.StoreViewModel
+@inject MyInventory.Data.ApplicationDbContext _context;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    All Categories
+                </a>
+                @foreach (var item in Model.CategoryList)
+                {
+                    var count = _context.Products.Where(p => p.CatId == item.CatId).ToList().Count;
+                    <a href="#" class="list-group-item list-group-item-action">@(item.Name) <span class="badge badge-danger">@(count)</span></a>
+                }
+            </div>
+        </div>
+        <div class="col-9">
+            <h2 class="text-center">All Products</h2>
+            <div class="row">
+                @foreach (var item in Model.ProductList)
+                {
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="~/img/products/@(item.ImagePath)" class="card-img-top" alt="@(item.Name)">
+                            <div class="card-body">
+                                <h5 class="card-title">@(item.Name)</h5>
+                                <p class="card-text">@(item.Description)</p>
+                                <small>Php @(item.Price)</small>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
