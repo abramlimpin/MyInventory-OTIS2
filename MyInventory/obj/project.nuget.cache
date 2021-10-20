@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jl+2R9R5cdhTd9wmAAlLrN4xPnV7noaguDS0bPowBE9rVJbrqgIQarDpL66amUiCcaBLZnlqeveA/rT1BvJF9Q==",
+  "dgSpecHash": "ghmUmFkuVleXWbHOTi6warbj9R+GyDK7FZuSotMmSBZHh/r+PZ+fDXXWgqdBPop/7WxHSaHBjXYSc1TGOrRCBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\infoasia\\Desktop\\MyInventory-OTIS2\\MyInventory\\MyInventory.csproj",
+  "projectFilePath": "C:\\Users\\infoasia\\dev\\abramlimpin\\MyInventory-OTIS2\\MyInventory\\MyInventory.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\infoasia\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\infoasia\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.10\\microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512",
