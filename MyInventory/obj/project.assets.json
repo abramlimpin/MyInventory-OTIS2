@@ -7475,11 +7475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\infoasia\\Desktop\\MyInventory-OTIS2\\MyInventory\\MyInventory.csproj",
+      "projectUniqueName": "C:\\Users\\infoasia\\dev\\abramlimpin\\MyInventory-OTIS2\\MyInventory\\MyInventory.csproj",
       "projectName": "MyInventory",
-      "projectPath": "C:\\Users\\infoasia\\Desktop\\MyInventory-OTIS2\\MyInventory\\MyInventory.csproj",
+      "projectPath": "C:\\Users\\infoasia\\dev\\abramlimpin\\MyInventory-OTIS2\\MyInventory\\MyInventory.csproj",
       "packagesPath": "C:\\Users\\infoasia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\infoasia\\Desktop\\MyInventory-OTIS2\\MyInventory\\obj\\",
+      "outputPath": "C:\\Users\\infoasia\\dev\\abramlimpin\\MyInventory-OTIS2\\MyInventory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\infoasia\\AppData\\Roaming\\NuGet\\NuGet.Config",
