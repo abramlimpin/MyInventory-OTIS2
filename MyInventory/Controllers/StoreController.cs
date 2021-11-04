@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using MyInventory.Data;
+
 using MyInventory.Models;
+using MyInventory.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyInventory.Controllers
 {
@@ -19,15 +21,27 @@ namespace MyInventory.Controllers
 
         public IActionResult Index()
         {
-            var products = _context.Products.ToList();
-            var categories = _context.Categories.ToList();
+            var products = _context.Products.Include(p => p.Category)
+                .ToList();
 
-            var model = new StoreViewModel
+            if (Request.Query.ContainsKey("c"))
+            {
+                products = products.Where(p => p.CatId ==
+                    int.Parse(Request.Query["c"].ToString()))
+                    .ToList();
+            }
+
+            var categories = _context.Categories
+                .OrderBy(c => c.Name)
+                .ToList();
+
+            var record = new StoreViewModel()
             {
                 ProductList = products,
                 CategoryList = categories
             };
-            return View(model);
+
+            return View(record);
         }
     }
 }

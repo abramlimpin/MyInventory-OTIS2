@@ -14,5 +14,6 @@
     <WebStackScaffolding_DbContextTypeFullName>MyInventory.Data.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
     <NameOfLastUsedPublishProfile>C:\Users\infoasia\source\repos\MyInventory\Properties\PublishProfiles\entprog-website - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
     <WebStackScaffolding_ControllerDialogWidth>650</WebStackScaffolding_ControllerDialogWidth>
+    <WebStackScaffolding_LayoutPageFile />
   </PropertyGroup>
 </Project>

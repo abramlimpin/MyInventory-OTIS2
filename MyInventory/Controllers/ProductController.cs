@@ -13,7 +13,6 @@ using System.Threading.Tasks;
 
 namespace MyInventory.Controllers
 {
-    [Authorize]
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _context;
